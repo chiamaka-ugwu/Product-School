@@ -539,7 +539,7 @@ main .right img{
 @media screen and (max-width: 1000px) {
     /* REGISTER MOBILE */
     .pop-up-reg .box{
-        width: 320px;
+        width: 321px;
         height: 580px;
     }
     .pop-up-reg .box .image{
