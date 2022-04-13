@@ -580,7 +580,6 @@ main .right img{
         justify-content: center;
         align-items: center;
         margin: 0;
-        padding: 4rem 0rem;
     }
     main .left{
         width: 90%;
@@ -589,7 +588,7 @@ main .right img{
         font-size: 2.35rem;
         text-align: center;
         margin: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     main .left p{
         width: 95%;
@@ -597,7 +596,7 @@ main .right img{
         margin: auto;
     }
     main .left .links{
-        margin-bottom: 5rem;
+        margin-bottom: 7rem;
         font-size: 1.15rem;
     }
     main .left .register{
@@ -642,7 +641,7 @@ main .right img{
     }
     .lorem .reg a{
         padding: 10px 100px;
-        margin-bottom: 4rem;
+        margin-bottom: 8rem;
         font-size: 1.15rem;
     }
 
@@ -691,6 +690,7 @@ main .right img{
     .training .call{
         padding: 10px 50px;
         font-size: 1.15rem;
+        margin-bottom: 9rem;
     }
 
 
@@ -709,6 +709,7 @@ main .right img{
     .grow .reg a{
         padding: 10px 110px;
         font-size: 1.15rem;
+        margin-bottom: 9rem;
     }
 
 }
