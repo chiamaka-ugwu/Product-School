@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Management</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- REGISTER -->
+    <div id="pop-up-reg" class="pop-up-reg">
+      <div class="box">
+        <div class="header">
+          <h1>Register</h1>
+          <a id="reg-close" class="fa fa-close"> </a>
+        </div>
+        <div class="body">
+          <div class="image">
+            <img src="./images/teaching illustration 1.png" />
+          </div>
+          <form id="paymentForm" class="input-field" method="POST">
+            <input
+            required
+              name="name"
+              class="name"
+              id="name"
+              type="text"
+              placeholder="Full Name"
+            />
+            <input
+            required
+              name="gender"
+              class=""
+              id=""
+              type="text"
+              placeholder="Gender"
+            />
+            <input
+            required
+              name="phone"
+              class=""
+              id=""
+              type="text"
+              placeholder="Phone number"
+            />
+            <input
+            required
+              name="email"
+              class="email"
+              id="email"
+              type="email"
+              placeholder="Email address"
+            />
+            <input
+            required
+              name="address"
+              class=""
+              id=""
+              type="text"
+              placeholder="Address"
+            />
+            <textarea name="" placeholder="Expectations"></textarea>
+
+              <input
+                type="submit"
+                value="Register"
+                class="submit"
+                onclick="payWithPaystack()"
+              />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- REGISTER ends -->
+
+    <!-- LET'S CALL YOU -->
+    <div id="pop-up-call" class="pop-up-call">
+      <div class="box">
+        <div class="header">
+          <h1>Let's Call You</h1>
+          <a id="call-close" class="fa fa-close"> </a>
+        </div>
+        <div class="image">
+          <img src="./images/letscallyou.png" />
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Full Name" />
+          <input type="text" placeholder="Phone Number" />
+        </div>
+        <div class="links">
+          <a href="">SUBMIT</a>
+        </div>
+      </div>
+    </div>
+    <!-- LET'S CALL YOU ENDS -->
+
+    <!-- PRODUCT MANAGEMENT -->
+    <div class="product">
+      <main>
+        <div class="left">
+          <h1>PRODUCT <span>MANAGEMENT</span></h1>
+          <p>
+            Product Management is one of the best in demand skills in the tech
+            ecosysytem. Join us today at Harvoxx Tech Hub in building your
+            proficiency in product mangement with the help of expertise.
+          </p>
+          <div class="links">
+            <a class="register" id="register">Register</a>
+            <a class="call" id="call">Let's Give You A Call</a>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./images/unsplash_g1Kr4Ozfoac.png" alt="" />
+        </div>
+      </main>
+    </div>
+
+    <!-- lorem ipsum -->
+    <div class="lorem">
+      <h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nibh urna
+        faucibus integer.
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus
+        imperdiet ut mattis sem non dictum. Id quam hac vitae amet. Etiam non at
+        egestas tincidunt libero facilisis aliquet. Hendrerit etiam vel, aenean
+        volutpat nec est amet risus.
+      </p>
+      <div class="body">
+        <div class="box">
+          <h1>Lorem ipsum dolor.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            gravida viverra egestas nunc scelerisque turpis vulputate volutpat
+            lobortis.
+          </p>
+        </div>
+        <div class="box">
+          <h1>Lorem ipsum dolor.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            gravida viverra egestas nunc scelerisque turpis vulputate volutpat
+            lobortis.
+          </p>
+        </div>
+        <div class="box">
+          <h1>Lorem ipsum dolor.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            gravida viverra egestas nunc scelerisque turpis vulputate volutpat
+            lobortis.
+          </p>
+        </div>
+      </div>
+      <div class="reg">
+        <a class="register" id="register2">Register</a>
+      </div>
+    </div>
+
+    <!-- training details -->
+    <div class="training">
+      <h1>Training Details</h1>
+      <p>
+        The training will be an intensive bootcamp sessions to acquire skills
+        which will prepare students for practical reality development or where
+        those who already have a knowledge can refine their skills.
+      </p>
+      <div class="body">
+        <div class="box one">
+          <div class="content one">
+            <h2>What To Be Expected</h2>
+            <p>
+              The bootcamp will cover a wide range of what product management is
+              all about, what to expect if you want to acquire a skill in
+              product mangement and kick start a career in this field. How to
+              apply the skill to real life scenarios or products and how to work
+              and position yourself out there as a product manager for
+              opportunities.
+            </p>
+          </div>
+          <div class="content">
+            <h2>Duration</h2>
+            <p>
+              The Bootcamp training will last for two weeks. Which after that,
+              all other trainings will be for a duration of three months.
+            </p>
+          </div>
+        </div>
+        <div class="box two">
+          <img src="./images/teaching illustration 1.png" alt="" />
+        </div>
+        <div class="box">
+          <div class="content one">
+            <h2>Price Details</h2>
+            <p>
+              Training cost=
+              <span style="color: #cf0e0e; text-decoration: line-through"
+                >#120,000</span
+              >
+            </p>
+            <p style="color: #cf0e0e;"><span class="discount">Training cost= </span> #50,000</p>
+          </div>
+          <div class="content">
+            <h2>Location</h2>
+            <p>
+              Elzazi Complex, Opposite Wesham Petrol Station, along
+              Gbalajam/Akpajo Road, Woji (Odili Road, Port-Harcourt).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a class="register" id="register3">Register</a>
+        <a class="call" id="call2">Let's Give You A Call</a>
+      </div>
+    </div>
+
+    <!-- grow with harvoxx -->
+    <div class="grow">
+      <h1>Grow With Harvoxx</h1>
+      <div class="body">
+        <div class="box">
+          <h3>Set Up a Working Schedule</h3>
+          <p>
+            Choose a weekly, weekend, monthly, virtual or physical classese that
+            works for.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Join Our Online Classes</h3>
+          <p>
+            Not been able to come learn physical? Not to worry, we got the best
+            online platforms available for online learning processes.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Build and Grow With Us</h3>
+          <p>
+            Experienced, fully-equiped professionals available to learn, grow
+            and build your career path in product mangement.
+          </p>
+        </div>
+      </div>
+      <div class="reg">
+        <a class="register" id="register4">Register</a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <script>
+      const paymentForm = document.getElementById("paymentForm");
+      paymentForm.addEventListener("submit", payWithPaystack, false);
+      function payWithPaystack(e) {
+        e.preventDefault();
+        let email = document.getElementById("email").value 
+
+        let handler = PaystackPop.setup({
+          key: "pk_test_9b62879216dcf007de5692c2f01c954be13b360d", // Replace with your public key
+          email: email,
+          amount: 5000000,
+          ref: "" + Math.floor(Math.random() * 1000000000 + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+          // label: "Optional string that replaces customer email"
+          onClose: function () {
+            alert("Window closed.");
+          },
+          callback: function (response) {
+            let message = "Payment complete! Reference: " + response.reference;
+            alert(message);
+          },
+        });
+        handler.openIframe();
+      }
+    </script>
+  </body>
+</html>
