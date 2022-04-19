@@ -430,7 +430,19 @@ main .right img{
     height: auto;
 }
 .training .body .box .content{
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
+}
+.training .body .box .content i{
+    font-size: 1.3rem;
+    color: white;
+    background-color: #3a60803f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 50px;
+    border-radius: 50%;
+    text-shadow:2px 2px 4px #000000;
 }
 .training .body .box .content h2{
     color: #DA940F;
@@ -445,7 +457,7 @@ main .right img{
     text-align: left;
 }
 .training .body .box .content h3{
-    color: #DA940F;
+    color: #DA940F;;
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 1.8rem;
@@ -538,13 +550,14 @@ main .right img{
     margin-top: 2rem;
     text-align: center;
     color: #DA940F;
+    font-size: 1.3rem;
 }
 .grow .body .box p{
     color: #fff;
     text-align: center;
     width: 85%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     line-height: 1.5rem;
     font-size: 1.25rem;
 } 
@@ -701,18 +714,24 @@ main .right img{
         width: 80%;
     }
     .training .body .box .content{
+        margin-top: 3rem;
         margin-bottom: 3rem;
+    }
+    .training .body .box .content i{
+        margin: auto;
+        margin-bottom: 1rem;
     }
     .training .body .box .content h2{
         text-align: center;
         margin-bottom: 0.5rem;
-        margin-top: 3rem;
     }    
     .training .body .box .content h3{
         text-align: center;    
     }    
     .training .body .box .content p{
         text-align: center;
+        margin-bottom: 3rem;
+
     }
     .training .body .one{
         height: auto;
