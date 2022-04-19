@@ -28,7 +28,7 @@
         </div>
         <div class="body">
           <div class="image">
-            <img src="./images/teaching illustration 1.png" />
+            <img src="./images/teaching illustration 1.png">
           </div>
           <form id="paymentForm" class="input-field" method="POST">
             <input
@@ -39,14 +39,14 @@
               type="text"
               placeholder="Full Name"
             />
-            <input
-            required
-              name="gender"
-              class=""
-              id=""
-              type="text"
-              placeholder="Gender"
-            />
+            <select 
+            name="gender"
+            class="gender"
+            id="name" >
+            <option value="none">Select gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select> 
             <input
             required
               name="phone"
@@ -71,8 +71,6 @@
               type="text"
               placeholder="Address"
             />
-            <textarea name="" placeholder="Expectations"></textarea>
-
               <input
                 type="submit"
                 value="Register"
@@ -80,29 +78,34 @@
                 onclick="payWithPaystack()"
               />
           </form>
+
+          
         </div>
+
+        <div style="height:90%;"></div>
       </div>
     </div>
     <!-- REGISTER ends -->
 
     <!-- LET'S CALL YOU -->
     <div id="pop-up-call" class="pop-up-call">
-      <div class="box">
-        <div class="header">
-          <h1>Let's Call You</h1>
-          <a id="call-close" class="fa fa-close"> </a>
+        <div class="box">
+            <div class="header">
+                <h1>Let's Call You</h1>
+                <a id="call-close" class="fa fa-close"> </a>
+            </div>
+            <div class="image">
+                <img src="./images/letscallyou.png" />
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Phone Number" />
+            </div>
+            <div class="links">
+                <a href="">SUBMIT</a>
+            </div>
+            <div style="height:90%;"></div>
         </div>
-        <div class="image">
-          <img src="./images/letscallyou.png" />
-        </div>
-        <div class="input-field">
-          <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Phone Number" />
-        </div>
-        <div class="links">
-          <a href="">SUBMIT</a>
-        </div>
-      </div>
     </div>
     <!-- LET'S CALL YOU ENDS -->
 
@@ -114,7 +117,7 @@
           <p>
             Product Management is one of the best in demand skills in the tech
             ecosysytem. Join us today at Harvoxx Tech Hub in building your
-            proficiency in product mangement with the help of expertise.
+            proficiency in Product Mangement with the help of our experts.
           </p>
           <div class="links">
             <a class="register" id="register">Register</a>
@@ -129,40 +132,37 @@
 
     <!-- lorem ipsum -->
     <div class="lorem">
-      <h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nibh urna
-        faucibus integer.
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus
-        imperdiet ut mattis sem non dictum. Id quam hac vitae amet. Etiam non at
-        egestas tincidunt libero facilisis aliquet. Hendrerit etiam vel, aenean
-        volutpat nec est amet risus.
-      </p>
+        <h1>Product Management School</h1>
+        <p>
+            Product management is one of the top in-demand skills in the tech space today. Join the
+            Harvoxx Product Management School and kick start your Product Management career.
+            We have crafted a system & program that will convert you into a highly-skilled Product Manager.
+        </p>
       <div class="body">
         <div class="box">
-          <h1>Lorem ipsum dolor.</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            gravida viverra egestas nunc scelerisque turpis vulputate volutpat
-            lobortis.
-          </p>
+            <img src="./images/Group 126.svg" style="width: 50%;" alt="intensive training">
+            <h1 class="intensive">Intensive Training</h1>
+            <p>
+                Our trainings are designed to equip and make you a good Product Manager. You will be trained
+                on how to efficiently use Product Management tools/software.
+            </p>
         </div>
         <div class="box">
-          <h1>Lorem ipsum dolor.</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            gravida viverra egestas nunc scelerisque turpis vulputate volutpat
-            lobortis.
-          </p>
+            <img src="./images/Group 130.svg" alt="on-the-job">
+            <h1 class="on-the-job">On the Job</h1>
+            <p>
+                During your training, you will be exposed to real-life terms working on real-life projects. You will
+                have the opportunity to learn on the job, connect and gain more practical experience.
+            </p>
         </div>
         <div class="box">
-          <h1>Lorem ipsum dolor.</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            gravida viverra egestas nunc scelerisque turpis vulputate volutpat
-            lobortis.
-          </p>
+            <img src="./images/Group 129.svg" style="width: 40%;" alt="certification">
+            <h1 class="cert">Certification and internship</h1>
+            <p>
+                You will be given the Harvoxx pins certificate & other Product Management professional
+                certifications. We have partnered with various companies, where you can be employed for an
+                internship immediately after your training.
+            </p>
         </div>
       </div>
       <div class="reg">
@@ -174,52 +174,68 @@
     <div class="training">
       <h1>Training Details</h1>
       <p>
-        The training will be an intensive bootcamp sessions to acquire skills
-        which will prepare students for practical reality development or where
-        those who already have a knowledge can refine their skills.
+        This training will prepare you to successfully transition into Product Management. The tech
+        space has been waiting for you. You're welcome!
       </p>
       <div class="body">
         <div class="box one">
-          <div class="content one">
-            <h2>What To Be Expected</h2>
-            <p>
-              The bootcamp will cover a wide range of what product management is
-              all about, what to expect if you want to acquire a skill in
-              product mangement and kick start a career in this field. How to
-              apply the skill to real life scenarios or products and how to work
-              and position yourself out there as a product manager for
-              opportunities.
+          <div class="content">
+            <h2>Schedules</h2>
+            <h3>SATURDAY (10am - 3pm)</h3>
+            <p>Saturdays are for physical trainings. Our experts will drill for you 4-5 hours. You will also
+                learn how to use several tools needed to make you a good Product Manager.
             </p>
+            <h3>WEDNESDAY (7pm - 8:30pm)</h3>
+            <p>You will connect virtually via zoom or Facebook group by 8pm - 9:30pm to learn.
+                This session will be recorded so if you miss it you can always go back and watch it before the
+                Saturday physical class.
+            </p> 
+            <h3>EVERY OTHER DAY:</h3> 
+            <p>You will be expected to dedicate at least 1hour at your convenience to
+                participate in the real-life project that you will be assigned to.
+            </p> 
           </div>
           <div class="content">
             <h2>Duration</h2>
             <p>
-              The Bootcamp training will last for two weeks. Which after that,
-              all other trainings will be for a duration of three months.
+                This training will last for 10 weeks. The next batch starts: on May 21 - July 23.
             </p>
-          </div>
+        </div>    
+          
         </div>
         <div class="box two">
-          <img src="./images/teaching illustration 1.png" alt="" />
+          <img src="./images/teaching illustration 1.png" alt="teaching" />
         </div>
         <div class="box">
-          <div class="content one">
-            <h2>Price Details</h2>
-            <p>
-              Training cost=
-              <span style="color: #cf0e0e; text-decoration: line-through"
-                >#120,000</span
-              >
-            </p>
-            <p style="color: #cf0e0e;"><span class="discount">Training cost= </span> #50,000</p>
-          </div>
-          <div class="content">
-            <h2>Location</h2>
-            <p>
-              Elzazi Complex, Opposite Wesham Petrol Station, along
-              Gbalajam/Akpajo Road, Woji (Odili Road, Port-Harcourt).
-            </p>
-          </div>
+            <div class="content">
+                <h2>Price Details</h2>
+                <p>
+                    Training cost =
+                    <span style="color: #cf0e0e; text-decoration: line-through">#120,000</span>
+                </p>
+                <p style="color: #cf0e0e;"><span class="discount">Training cost = </span> #60,000</p>
+            </div>
+            <div class="content">
+                <h2>Location</h2>
+                <p>
+                    Harvoxx Training Lab, Elzazi Plaza, Opposite Wesham Filling Station, Alcon Road, Woji, Port
+                    Harcourt.
+                </p>
+            </div>
+            <div class="content">
+                <h2>Assured Learning</h2>
+                <p>
+                    You have the passion and desire to grow; we have the resources, the system, and the strategy
+                    to help you grow in Tech.
+                </p>
+            </div>  
+            <div class="content">
+                <h2>Flexible</h2>
+                <p>
+                    Our processes & methods are flexible. We know you can do better in a system that identifies
+                    your strengths & cures your fears.
+                </p>
+            </div>  
         </div>
       </div>
       <div class="links">
@@ -235,14 +251,14 @@
         <div class="box">
           <h3>Set Up a Working Schedule</h3>
           <p>
-            Choose a weekly, weekend, monthly, virtual or physical classese that
-            works for.
+            Choose a weekly, weekend, monthly, virtual or physical class that
+            works for you.
           </p>
         </div>
         <div class="box">
           <h3>Join Our Online Classes</h3>
           <p>
-            Not been able to come learn physical? Not to worry, we got the best
+            Not been able to come learn physically? Not to worry, we've got the best
             online platforms available for online learning processes.
           </p>
         </div>
