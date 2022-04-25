@@ -731,7 +731,9 @@ main .right img{
     .training .body .box .content p{
         text-align: center;
         margin-bottom: 3rem;
-
+    }
+    .discount{
+        margin-top: -3rem;
     }
     .training .body .one{
         height: auto;
