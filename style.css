@@ -733,6 +733,9 @@ main .right img{
         margin-bottom: 3rem;
 
     }
+    .discount{
+    margin-top: -3rem;
+    }
     .training .body .one{
         height: auto;
     }
