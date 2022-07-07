@@ -29,7 +29,7 @@ body{
     background-color: #fff;
     border: 1px solid rgb(204, 204, 204);
     width: 700px;
-    height: 480px;
+    height: 550px;
     border-radius: 5px;
 }
 .pop-up-reg .box .header{
@@ -48,6 +48,8 @@ body{
     cursor: pointer;
     color: #cf0e0e;
     font-size: 30px;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
 }
 .pop-up-reg .box .header a:hover{
     background-color: #b1c9df63;
@@ -75,11 +77,12 @@ body{
 .pop-up-reg .box input{
     width: 80%;
     padding: 15px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
     border: 1px solid rgb(204, 204, 204);
     color: #20425E;
+    outline: none;
 }
 .pop-up-reg .box input:hover{
     border: 1px solid #20425E;
@@ -87,11 +90,12 @@ body{
 .pop-up-reg .box .input-field .gender{
     width: 90%;
     padding: 15px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
     border: 1px solid rgb(204, 204, 204);
     color: #20425E;
+    outline: none;
 }
 .pop-up-reg .box .links{
     width: 100%;
@@ -163,6 +167,8 @@ body{
     cursor: pointer;
     color: #cf0e0e;
     font-size: 30px;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
 }
 .pop-up-call .box .header a:hover{
     background-color: #b1c9df63;
@@ -193,6 +199,7 @@ body{
     margin-bottom: 1rem;
     border: 1px solid rgb(204, 204, 204);
     color: #20425E;
+    outline: none;
 }
 .pop-up-call .box input:hover{
     border: 1px solid #20425E;
@@ -336,7 +343,7 @@ main .right img{
     border-top: 1px solid #DA940F;
     border-bottom: 1px solid #DA940F;
 }
-.lorem p{
+.lorem .first{
     width: 80%;
     color: #20425E;
     margin: auto;
@@ -345,7 +352,8 @@ main .right img{
     padding-bottom: 4rem;
 }
 .lorem .body{
-    width: 100%;
+    width: 95%;
+    margin: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -357,6 +365,7 @@ main .right img{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 .lorem .body .box img{
     width: 60%;
@@ -367,16 +376,19 @@ main .right img{
     font-size: 1.5rem;
     border: none;
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .lorem .body .box p{
+    font-size: 1.25rem;
+    color: #20425E;
+    text-align: center;
     font-size: 1.25rem;
 }
 .lorem .reg{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 4rem;
 }
 .lorem .reg a{
     cursor: pointer;
@@ -588,7 +600,7 @@ main .right img{
     } */
     .pop-up-reg .box{
         width: 321px;
-        height: 500px;
+        height: 580px;
     }
     .pop-up-reg .box .image{
         display: none;
@@ -688,10 +700,15 @@ main .right img{
         width: 90%;
         margin-bottom: 1rem;
     }
+    .lorem .reg{
+        margin-top: 0rem;
+    }
     .lorem .reg a{
         padding: 10px 100px;
         margin-bottom: 8rem;
         font-size: 1.15rem;
+        margin-bottom: 3rem;
+
     }
 
 
@@ -730,8 +747,6 @@ main .right img{
     }    
     .training .body .box .content p{
         text-align: center;
-        margin-bottom: 3rem;
-
     }
     .discount{
     margin-top: -3rem;
