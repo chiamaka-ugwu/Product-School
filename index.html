@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Management</title>
+    <title>Product School</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -198,16 +197,24 @@
     </div>
     <!-- LET'S CALL YOU ENDS -->
 
+
+    
+
     <!-- PRODUCT MANAGEMENT -->
 
     <div class="product">
         <main>
             <div class="left">
-            <h1>PRODUCT <span>MANAGEMENT</span></h1>
+            <h1>PRODUCT <span>SCHOOL</span></h1>
             <p>
-                Product Management is one of the best in demand skills in the tech
-                ecosysytem. Join us today at Harvoxx Tech Hub in building your
-                proficiency in Product Mangement with the help of our experts.
+                The beauty and value of tech are reflected in products. The success of every product depends on it's 
+                <b style="color: #00a693;">Design</b>, proper <b style="color: #DA940F;">Testing</b> after development, 
+                <b style="color: #d473d4">Management</b> and top-notch <b style="color: #a2a2d0;">Marketing</b>. <br><br>
+                Hence product designers, product testers, product managers, and product marketers are at the heart of 
+                every successful product and are in high demand with good pay. <br><br>
+                At HAPS, we offer you the opportunity to gain product design, product management, product testing or 
+                product marketing skills.
+                
             </p>
             <div class="links">
                 <a class="register" id="register">Register</a>
@@ -215,7 +222,7 @@
             </div>
             </div>
             <div class="right">
-            <img src="./images/unsplash_g1Kr4Ozfoac.png">
+            <img src="./images/IMG-20220812-WA0016.jpg">
             </div>
         </main>
     </div> 
@@ -223,19 +230,20 @@
     
     <!-- lorem ipsum -->
     <div class="lorem">
-        <h1>Product Management School</h1>
+        <h1>Harvoxx Product School</h1>
         <p class="first">
-            Product management is one of the top in-demand skills in the tech space today. Join the
-            Harvoxx Product Management School and kick start your Product Management career.
-            We have crafted a system & program that will convert you into a highly-skilled Product Manager.
+            These are in-demand skills in the world today. Join The Harvoxx Product School (HAPS) and be equipped to 
+            become a professional and highly sort after <b style="color: red;">Product Designer</b>, <b style="color:
+            #DA940F;">Product Manager</b>, <b style="color: blue;">Product Tester</b>, and 
+            <b style="color: green;">Product Marketer</b>.
         </p>
         <div class="body">
             <div class="box">
                 <img src="./images/Group 126.svg" style="width: 50%;" alt="intensive training">
                 <h1 class="intensive">Product Design</h1>
                 <p>
-                    Our trainings are designed to equip and make you a good Product Manager. You will be trained
-                    on how to efficiently use Product Management tools/software.
+                    A product designer will be in charge of the overall user experience and the success of a product. 
+                    Let's help you become a product designer.
                 </p>
                 <div class="reg">
                     <a class="register" id="register2">Register</a>
@@ -245,8 +253,8 @@
                 <img src="./images/Group 130.svg" alt="on-the-job">
                 <h1 class="on-the-job">Product Management</h1>
                 <p>
-                    During your training, you will be exposed to real-life teams working on real-life projects. You will
-                    have the opportunity to learn on the job, connect and gain more practical experience.
+                    A product manager is referred to as the "CEO" of products. A PM manages the point where Technology, 
+                    ux and the business of a product intersects.
                 </p>
                 <div class="reg">
                     <a class="register" id="register5">Register</a>
@@ -256,8 +264,8 @@
                 <img src="./images/Group 129.svg" style="width: 40%;" alt="certification">
                 <h1 class="cert">Product Marketing</h1>
                 <p>
-                    During your training, you will be exposed to real-life teams working on real-life projects. You will
-                    have the opportunity to learn on the job, connect and gain more practical experience.
+                    A product marketer is responsible for leading the product's go-to-market strategy 
+                    adequately communicates the USP to the target users.
                 </p>
                 <div class="reg">
                     <a class="register" id="register6">Register</a>
@@ -267,8 +275,8 @@
                 <img src="./images/Group 126.svg" style="width: 40%;" alt="certification">
                 <h1 class="cert">Product Testing</h1>
                 <p>
-                    During your training, you will be exposed to real-life teams working on real-life projects. You will
-                    have the opportunity to learn on the job, connect and gain more practical experience.
+                    Product testing manager oversees the overall process of pilot testing and reviewing a product to 
+                    ensure that the MVP is set and ready for the market.
                 </p>
                 <div class="reg">
                     <a class="register" id="register7">Register</a>
@@ -281,7 +289,7 @@
     <div class="training">
       <h1>Training Details</h1>
       <p>
-        This training will prepare you to successfully transition into Product Management. The tech
+        This training will prepare you to successfully transition into your desired Product Track. The tech
         space has been waiting for you. You're welcome!
       </p>
       <div class="body">
@@ -372,436 +380,8 @@
       </div>
     </div>
 
-    <script src="./script.js"></script>
-
-    <script src="https://js.paystack.co/v1/inline.js"></script>
-
-    <script>
-      const paymentForm = document.getElementById("paymentForm");
-      paymentForm.addEventListener("submit", payWithPaystack, false);
-      function payWithPaystack(e) {
-        e.preventDefault();
-        let email = document.getElementById("email").value 
-
-        let handler = PaystackPop.setup({
-          key: "pk_test_9b62879216dcf007de5692c2f01c954be13b360d", // Replace with your public key
-          email: email,
-          amount: 5000000,
-          ref: "" + Math.floor(Math.random() * 1000000000 + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-          // label: "Optional string that replaces customer email"
-          onClose: function () {
-            alert("Window closed.");
-          },
-          callback: function (response) {
-            let message = "Payment complete! Reference: " + response.reference;
-            alert(message);
-          },
-        });
-        handler.openIframe();
-      }
-    </script>
 
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
-    <!-- <script>
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:5000,
-            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-    </script> -->
-
-
-  </body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Management</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
-    <link rel="stylesheet" href="./style.css" />
-
-    <script src="https://kit.fontawesome.com/ba375fe002.js" crossorigin="anonymous"></script>
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
-
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
-
-
-  </head>
-  <body>
-    <!-- REGISTER -->
-    <div id="pop-up-reg" class="pop-up-reg">
-      <div class="box">
-        <div class="header">
-          <h1>Register</h1>
-          <a id="reg-close" class="fa fa-close"> </a>
-        </div>
-        <div class="body">
-          <div class="image">
-            <img src="./images/teaching illustration 1.png">
-          </div>
-          <form id="paymentForm" class="input-field" method="POST">
-            <input type="text" id="training" value="Product Design" readonly>
-            <input
-            required
-              name="name"
-              class="name"
-              id="name"
-              type="text"
-              placeholder="Full Name"
-            />
-            <select 
-            name="gender"
-            class="gender"
-            id="name" >
-            <option value="none">Select gender</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-        </select> 
-            <input
-            required
-              name="phone"
-              class=""
-              id=""
-              type="text"
-              placeholder="Phone number"
-            />
-            <input
-            required
-              name="email"
-              class="email"
-              id="email"
-              type="email"
-              placeholder="Email address"
-            />
-            <input
-            required
-              name="address"
-              class=""
-              id=""
-              type="text"
-              placeholder="Address"
-            />
-              <input
-                type="submit"
-                value="Register"
-                class="submit"
-                onclick="payWithPaystack()"
-              />
-          </form>
-
-          
-        </div>
-
-        <div style="height:90%;"></div>
-      </div>
-    </div>
-    <!-- REGISTER ends -->
-
-
-
-    <!-- REGISTER -->
-    <div id="pop-up-reg2" class="pop-up-reg">
-        <div class="box">
-          <div class="header">
-            <h1>Register</h1>
-            <a id="reg-close2" class="fa fa-close"> </a>
-          </div>
-          <div class="body">
-            <div class="image">
-              <img src="./images/teaching illustration 1.png">
-            </div>
-            <form id="paymentForm" class="input-field" method="POST">
-                <select name="training" id="training" class="gender">
-                    <option value="Product Design">Product Design</option>
-                    <option value="Product Management">Product Management</option>
-                    <option value="Product Marketing">Product Marketing</option>
-                    <option value="Product Testing">Product Testing</option>
-                </select>
-              <input
-              required
-                name="name"
-                class="name"
-                id="name"
-                type="text"
-                placeholder="Full Name"
-              />
-              <select 
-              name="gender"
-              class="gender"
-              id="name" >
-              <option value="none">Select gender</option>
-              <option value="M">Male</option>
-              <option value="F">Female</option>
-          </select> 
-              <input
-              required
-                name="phone"
-                class=""
-                id=""
-                type="text"
-                placeholder="Phone number"
-              />
-              <input
-              required
-                name="email"
-                class="email"
-                id="email"
-                type="email"
-                placeholder="Email address"
-              />
-              <input
-              required
-                name="address"
-                class=""
-                id=""
-                type="text"
-                placeholder="Address"
-              />
-                <input
-                  type="submit"
-                  value="Register"
-                  class="submit"
-                  onclick="payWithPaystack()"
-                />
-            </form>
-  
-            
-          </div>
-  
-          <div style="height:90%;"></div>
-        </div>
-      </div>
-      <!-- REGISTER ends -->
-  
-
-
-
-
-
-
-    <!-- LET'S CALL YOU -->
-    <div id="pop-up-call" class="pop-up-call">
-        <div class="box">
-            <div class="header">
-                <h1>Let's Call You</h1>
-                <a id="call-close" class="fa fa-close"> </a>
-            </div>
-            <div class="image">
-                <img src="./images/letscallyou.png" />
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Full Name" />
-                <input type="text" placeholder="Phone Number" />
-            </div>
-            <div class="links">
-                <a href="">SUBMIT</a>
-            </div>
-            <div style="height:90%;"></div>
-        </div>
-    </div>
-    <!-- LET'S CALL YOU ENDS -->
-
-    <!-- PRODUCT MANAGEMENT -->
-
-    <div class="product">
-        <main>
-            <div class="left">
-            <h1>PRODUCT <span>MANAGEMENT</span></h1>
-            <p>
-                Product Management is one of the best in demand skills in the tech
-                ecosysytem. Join us today at Harvoxx Tech Hub in building your
-                proficiency in Product Mangement with the help of our experts.
-            </p>
-            <div class="links">
-                <a class="register" id="register">Register</a>
-                <a class="call" id="call">Let's Give You A Call</a>
-            </div>
-            </div>
-            <div class="right">
-            <img src="./images/unsplash_g1Kr4Ozfoac.png">
-            </div>
-        </main>
-    </div> 
-            
-    
-    <!-- lorem ipsum -->
-    <div class="lorem">
-        <h1>Product Management School</h1>
-        <p class="first">
-            Product management is one of the top in-demand skills in the tech space today. Join the
-            Harvoxx Product Management School and kick start your Product Management career.
-            We have crafted a system & program that will convert you into a highly-skilled Product Manager.
-        </p>
-        <div class="body">
-            <div class="box">
-                <img src="./images/Group 126.svg" style="width: 50%;" alt="intensive training">
-                <h1 class="intensive">Product Design</h1>
-                <p>
-                    Our trainings are designed to equip and make you a good Product Manager. You will be trained
-                    on how to efficiently use Product Management tools/software.
-                </p>
-                <div class="reg">
-                    <a class="register" id="register2">Register</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./images/Group 130.svg" alt="on-the-job">
-                <h1 class="on-the-job">Product Management</h1>
-                <p>
-                    During your training, you will be exposed to real-life teams working on real-life projects. You will
-                    have the opportunity to learn on the job, connect and gain more practical experience.
-                </p>
-                <div class="reg">
-                    <a class="register" id="register5">Register</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./images/Group 129.svg" style="width: 40%;" alt="certification">
-                <h1 class="cert">Product Marketing</h1>
-                <p>
-                    During your training, you will be exposed to real-life teams working on real-life projects. You will
-                    have the opportunity to learn on the job, connect and gain more practical experience.
-                </p>
-                <div class="reg">
-                    <a class="register" id="register6">Register</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./images/Group 126.svg" style="width: 40%;" alt="certification">
-                <h1 class="cert">Product Testing</h1>
-                <p>
-                    During your training, you will be exposed to real-life teams working on real-life projects. You will
-                    have the opportunity to learn on the job, connect and gain more practical experience.
-                </p>
-                <div class="reg">
-                    <a class="register" id="register7">Register</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- training details -->
-    <div class="training">
-      <h1>Training Details</h1>
-      <p>
-        This training will prepare you to successfully transition into Product Management. The tech
-        space has been waiting for you. You're welcome!
-      </p>
-      <div class="body">
-        <div class="box one">
-          <div class="content">
-            <i class="fa-solid fa-calendar-days"></i>
-            <h2>SCHEDULES</h2>
-            <h3>Saturday (10am - 3pm)</h3>
-            <p>Saturdays are for physical trainings. Our experts will drill for you 4-5 hours. You will also
-                learn how to use several tools needed to make you a good Product Manager.
-            </p>
-            <h3>Wednesday (7pm - 8:30pm)</h3>
-            <p>You will connect virtually via zoom or Facebook group by 8pm - 9:30pm to learn.
-                This session will be recorded so if you miss it you can always go back and watch it before the
-                Saturday physical class.
-            </p> 
-            <h3>Every Other Day:</h3> 
-            <p>You will be expected to dedicate at least 1hour at your convenience to
-                participate in the real-life project that you will be assigned to.
-            </p> 
-          </div>    
-        </div>
-
-        <div class="box two">
-          <img src="./images/teaching illustration 1.png" alt="teaching" />
-        </div>
-        <div class="box">
-          <div class="content">
-            <i class="fa-solid fa-hourglass"></i>
-            <h2>DURATION</h2>
-            <p>
-                This training will last for 10 weeks. The next batch starts: on May 21 - July 23.
-            </p>
-        </div>    
-            <div class="content">
-              <i class="fa-solid fa-naira-sign"></i>
-                <h2>PRICE DETAILS</h2>
-                <p>
-                    Training cost =
-                    <span style="color: #14a01b; text-decoration: line-through;">#120,000</span>
-                </p>
-                <p style="color: #14a01b;"><span class="discount">Training cost = </span> #60,000</p>
-            </div>
-            <div class="content">
-              <i class="fa-solid fa-location-dot"></i>
-                <h2>LOCATION</h2>
-                <p>
-                    Harvoxx Training Lab, Elzazi Plaza, Opposite Wesham Filling Station, Alcon Road, Woji, Port
-                    Harcourt.
-                </p>
-            </div> 
-        </div>
-      </div>
-      <div class="links">
-        <a class="register" id="register3">Register</a>
-        <a class="call" id="call2">Let's Give You A Call</a>
-      </div>
-    </div>
-
-    <!-- grow with harvoxx -->
-    <div class="grow">
-      <h1>Grow With Harvoxx</h1>
-      <div class="body">
-        <div class="box">
-          <h3>Assured Learning</h3>
-          <p>
-            You have the passion and desire to grow; we have the resources, the system, and the strategy
-            to help you grow in Tech.
-          </p>
-        </div>
-        <div class="box">
-          <h3>Flexible</h3>
-          <p>
-            Our processes & methods are flexible. We know you can do better in a system that identifies
-            your strengths & cures your fears.
-          </p>
-        </div>
-        <div class="box">
-          <h3>Build and Grow With Us</h3>
-          <p>
-            Experienced, fully-equiped professionals available to train, grow
-            and build your career path in product mangement.
-          </p>
-        </div>
-      </div>
-      <div class="reg">
-        <a class="register" id="register4">Register</a>
-      </div>
-    </div>
 
     <script src="./script.js"></script>
 
@@ -860,4 +440,3 @@
 
   </body>
 </html>
->>>>>>> d22c70d9fa7bf777f156d784f2d7c39fb4851b99
