@@ -62,7 +62,7 @@ body{
     margin-top: 2rem;
     margin-left: 1rem;
     width: 50%;
-    height: 250px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,6 +245,36 @@ body{
 
 
 /* PRODUCT */
+header{
+    background-color: #fff;
+    width: 100%; 
+    position: sticky; 
+    top: 0;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    padding: 0.5rem 0;
+}
+header img{
+    width: 6%; 
+    margin-left: 7rem;
+}
+header .menu{
+    display: none;
+}
+header .links{
+    float: right;
+    display: inline;
+    margin: 1rem 6rem 0 0;
+}
+header .links a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #20425E;
+    margin-left: 2rem;
+    font-weight: 600;
+}
+header .links a:hover{
+    color: #DA940F;
+}
 .product{
     width: 100%;
     height: auto;
@@ -315,7 +345,7 @@ main .left .call:hover{
     border: 2px solid rgb(204, 204, 204);
 }
 main .right{
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: center;
     margin-left: 3rem;    
@@ -413,7 +443,7 @@ main .right img{
     width: 100%;
     height: auto;
     background: rgba(32, 66, 94, 0.05);
-    padding-top: 3rem;
+    padding-top: 6rem;
 }
 .training h1{
     width: fit-content;
@@ -444,7 +474,10 @@ main .right img{
     height: auto;
 }
 .training .body .box .content{
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
+}
+.training .body .box .price{
+    margin-bottom: 10rem;
 }
 .training .body .box .content i{
     font-size: 1.3rem;
@@ -471,12 +504,12 @@ main .right img{
     text-align: left;
 }
 .training .body .box .content h3{
-    color: #DA940F;;
+    color: #DA940F;
     font-size: 1.25rem;
     font-weight: 600;
-    margin-top: 1.8rem;
+    margin-top: 1rem;
     margin-bottom: 0.4rem;
-}    
+}
 .discount{
     visibility: hidden;
 }
@@ -486,11 +519,13 @@ main .right img{
 .training .body .two{
     display: flex;
     justify-content: center;
+    /* align-items: center; */
+    /* background-color: #cf0e0e; */
 }
 .training .body .box img{
-    margin-top: 7rem;
-    width: 70%;
-    height: 40%;
+    width: 80%;
+    height: 70%;
+    margin-top: 2rem;
 }
 .training .links{
     height: auto;
@@ -596,12 +631,10 @@ main .right img{
 
 
 
-/* MOBILE VIEW */
+/* MOBILE VIEW /////////////////////////////////////////////////////////////////////////////////////////////*/ 
 @media screen and (max-width: 1000px) {
     /* REGISTER MOBILE */
-    /* .pop-up-reg{
-        position: absolute;
-    } */
+    
     .pop-up-reg .box{
         width: 321px;
         height: 580px;
@@ -627,13 +660,47 @@ main .right img{
         width: 80%;
     }
 
-
-
-
     /* CALL MOBILE */
     .pop-up-call .box{
         width: 320px;
     }
+
+
+
+    /* HEADER MOBILE */
+    header{
+        /* position: absolute; */
+        padding-top: 1rem;
+    }
+    header img{
+        width: 25%; 
+        margin-left: 2rem;
+    }
+    header .menu{
+        display: block;
+        float: right;
+        color: #20425E;
+        font-size: 25px;
+        margin: 1rem 1.5rem;
+        margin-bottom: 0;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    header .links{
+        float: none;
+        display: flex;
+        flex-flow: column wrap;
+        margin: 2rem 6rem 0 0;
+        display: none;
+        transition: height 2s;
+    }
+    header .links a{
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+
+    }
+
 
 
     /* PRODUCT MOBILE */
@@ -648,6 +715,7 @@ main .right img{
         justify-content: center;
         align-items: center;
         margin: 0;
+        padding: 3rem 0rem;
     }
     main .left{
         width: 90%;

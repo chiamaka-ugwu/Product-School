@@ -19,6 +19,9 @@ var call2 = document.getElementById('call2');
 var call_close = document.getElementById('call-close');
 
 
+var menu = document.getElementById('menu');
+var links = document.getElementById('links');
+
 
 register.addEventListener('click', function(){
     pop_up_reg2.style.display = "flex";
@@ -39,12 +42,10 @@ register5.addEventListener('click', function(){
 register6.addEventListener('click', function(){
     pop_up_reg.style.display = "flex";
     training.setAttribute("value", "Product Marketing");
-
 })
 register7.addEventListener('click', function(){
     pop_up_reg.style.display = "flex";
     training.setAttribute("value", "Product Testing");
-
 })
 
 
@@ -65,5 +66,22 @@ call2.addEventListener('click', function(){
 })
 
 call_close.addEventListener('click', function(){
-    pop_up_call.style.display = "none"
+    pop_up_call.style.display = "none";
+})
+
+
+var open = false
+menu.addEventListener('click', function(){
+    if(open == false){
+        links.style.display = "flex";
+        menu.style.border = '1px solid #20425E';
+        open = true
+    }
+    else{
+        links.style.display = "none";
+        links.style.transform = 'scaleY(1)'
+
+        menu.style.border = 'none';
+        open = false
+    }
 })

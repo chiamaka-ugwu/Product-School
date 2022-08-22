@@ -33,7 +33,7 @@
         </div>
         <div class="body">
           <div class="image">
-            <img src="./images/teaching illustration 1.png">
+            <img src="./images/HAPS (Harvoxx Product School).png" style="width: 50%">
           </div>
           <form id="paymentForm" class="input-field" method="POST">
             <input type="text" id="training" value="Product Design" readonly>
@@ -45,14 +45,6 @@
               type="text"
               placeholder="Full Name"
             />
-            <select 
-            name="gender"
-            class="gender"
-            id="name" >
-            <option value="none">Select gender</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-        </select> 
             <input
             required
               name="phone"
@@ -76,6 +68,14 @@
               id=""
               type="text"
               placeholder="Address"
+            />
+            <input
+            required
+              name="discount"
+              class=""
+              id=""
+              type="text"
+              placeholder="Discount code"
             />
               <input
                 type="submit"
@@ -104,7 +104,7 @@
           </div>
           <div class="body">
             <div class="image">
-              <img src="./images/teaching illustration 1.png">
+              <img src="./images/HAPS (Harvoxx Product School).png" style="width: 50%">
             </div>
             <form id="paymentForm" class="input-field" method="POST">
                 <select name="training" id="training" class="gender">
@@ -121,14 +121,6 @@
                 type="text"
                 placeholder="Full Name"
               />
-              <select 
-              name="gender"
-              class="gender"
-              id="name" >
-              <option value="none">Select gender</option>
-              <option value="M">Male</option>
-              <option value="F">Female</option>
-          </select> 
               <input
               required
                 name="phone"
@@ -153,6 +145,14 @@
                 type="text"
                 placeholder="Address"
               />
+              <input
+            required
+              name="discount"
+              class=""
+              id=""
+              type="text"
+              placeholder="Discount code"
+            />
                 <input
                   type="submit"
                   value="Register"
@@ -201,6 +201,16 @@
     
 
     <!-- PRODUCT MANAGEMENT -->
+    <header>
+        <img src="./images/HAPS (Harvoxx Product School).png">
+        <i class="fa fa-bars menu" id="menu"></i>
+        <div class="links" id="links">
+            <a href="#">Home</a>
+            <a href="#HaPS">HaPS</a>
+            <a href="#train">Training</a>
+            <a href="#grow">Grow with Harvoxx</a>
+        </div>
+    </header>
 
     <div class="product">
         <main>
@@ -229,7 +239,7 @@
             
     
     <!-- lorem ipsum -->
-    <div class="lorem">
+    <div class="lorem" id="HaPS">
         <h1>Harvoxx Product School</h1>
         <p class="first">
             These are in-demand skills in the world today. Join The Harvoxx Product School (HAPS) and be equipped to 
@@ -239,7 +249,7 @@
         </p>
         <div class="body">
             <div class="box">
-                <img src="./images/Group 126.svg" style="width: 50%;" alt="intensive training">
+                <img src="./images/Mobile UX-cuate.png" style="width: 50%">
                 <h1 class="intensive">Product Design</h1>
                 <p>
                     A product designer will be in charge of the overall user experience and the success of a product. 
@@ -250,18 +260,18 @@
                 </div>
             </div>
             <div class="box">
-                <img src="./images/Group 130.svg" alt="on-the-job">
+                <img src="./images/Organizing projects-cuate.png">
                 <h1 class="on-the-job">Product Management</h1>
                 <p>
-                    A product manager is referred to as the "CEO" of products. A PM manages the point where Technology, 
-                    ux and the business of a product intersects.
+                    A product manager is referred to as the "CEO" of products. A PM manages the point where technology, 
+                    UX and the business of a product intersects.
                 </p>
                 <div class="reg">
                     <a class="register" id="register5">Register</a>
                 </div>
             </div>
             <div class="box">
-                <img src="./images/Group 129.svg" style="width: 40%;" alt="certification">
+                <img src="./images/Marketing-bro.png" style="width: 50%;" >
                 <h1 class="cert">Product Marketing</h1>
                 <p>
                     A product marketer is responsible for leading the product's go-to-market strategy 
@@ -272,7 +282,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="./images/Group 126.svg" style="width: 40%;" alt="certification">
+                <img src="./images/Software code testing-cuate.png" >
                 <h1 class="cert">Product Testing</h1>
                 <p>
                     Product testing manager oversees the overall process of pilot testing and reviewing a product to 
@@ -286,7 +296,7 @@
     </div>
 
     <!-- training details -->
-    <div class="training">
+    <div class="training" id="train">
       <h1>Training Details</h1>
       <p>
         This training will prepare you to successfully transition into your desired Product Track. The tech
@@ -294,44 +304,40 @@
       </p>
       <div class="body">
         <div class="box one">
-          <div class="content">
-            <i class="fa-solid fa-calendar-days"></i>
-            <h2>SCHEDULES</h2>
-            <h3>Saturday (10am - 3pm)</h3>
-            <p>Saturdays are for physical trainings. Our experts will drill for you 4-5 hours. You will also
-                learn how to use several tools needed to make you a good Product Manager.
-            </p>
-            <h3>Wednesday (7pm - 8:30pm)</h3>
-            <p>You will connect virtually via zoom or Facebook group by 8pm - 9:30pm to learn.
-                This session will be recorded so if you miss it you can always go back and watch it before the
-                Saturday physical class.
-            </p> 
-            <h3>Every Other Day:</h3> 
-            <p>You will be expected to dedicate at least 1hour at your convenience to
-                participate in the real-life project that you will be assigned to.
-            </p> 
-          </div>    
+            <div class="content">
+                <i class="fa-solid fa-calendar-days"></i>
+                <h2>SCHEDULES</h2>
+                <h3>~ Weekdays</h3>
+                <p>
+                3 times a week <br> 4 hours per session
+                </p>
+                <h3>~ Weekends</h3>
+                <p>
+                Saturdays (10am - 3pm) <br>
+                Sundays (1pm - 5pm)
+                </p> 
+            </div> 
+            <div class="content">
+                <i class="fa-solid fa-hourglass"></i>
+                <h2>DURATION</h2>
+                <p>
+                    This training will last for 10 weeks. Next batch: Oct 3rd - Dec 12th 2022.
+                </p>
+            </div>     
         </div>
 
         <div class="box two">
-          <img src="./images/teaching illustration 1.png" alt="teaching" />
+          <img src="./images/Seminar-bro.png" alt="teaching" />
         </div>
-        <div class="box">
-          <div class="content">
-            <i class="fa-solid fa-hourglass"></i>
-            <h2>DURATION</h2>
-            <p>
-                This training will last for 10 weeks. The next batch starts: on May 21 - July 23.
-            </p>
-        </div>    
-            <div class="content">
+        <div class="box">  
+            <div class="content price">
               <i class="fa-solid fa-naira-sign"></i>
                 <h2>PRICE DETAILS</h2>
                 <p>
                     Training cost =
-                    <span style="color: #14a01b; text-decoration: line-through;">#120,000</span>
+                    <span style="color: red; text-decoration: line-through;">#140,000</span>
                 </p>
-                <p style="color: #14a01b;"><span class="discount">Training cost = </span> #60,000</p>
+                <p style="color: #14a01b;"><span class="discount">Training cost = </span> #70,000</p>
             </div>
             <div class="content">
               <i class="fa-solid fa-location-dot"></i>
@@ -350,7 +356,7 @@
     </div>
 
     <!-- grow with harvoxx -->
-    <div class="grow">
+    <div class="grow" id="grow">
       <h1>Grow With Harvoxx</h1>
       <div class="body">
         <div class="box">
@@ -380,7 +386,7 @@
       </div>
     </div>
 
-
+    <!-- <a style="float: right; font-size: 0.7rem;" href="https://storyset.com/people">People illustrations by Storyset</a> -->
 
 
     <script src="./script.js"></script>
