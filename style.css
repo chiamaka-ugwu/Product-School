@@ -250,8 +250,7 @@ header{
     width: 100%; 
     position: sticky; 
     top: 0;
-    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
-    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);    padding: 0.5rem 0;
 }
 header img{
     width: 6%; 
@@ -755,6 +754,9 @@ main .right img{
 
 
     /* LOREM MOBILE */
+    .lorem{
+        padding-top: 7rem;
+    }
     .lorem h1{
         width: 90%;
         font-size: 2.2rem;
@@ -780,13 +782,12 @@ main .right img{
         margin-bottom: 8rem;
         font-size: 1.15rem;
         margin-bottom: 3rem;
-
     }
 
 
     /* TRAINING MOBILE */
     .training{
-        padding-top: 5rem;
+        padding-top: 7rem;
     }
     .training h1{
         margin-bottom: 2rem;
@@ -841,13 +842,16 @@ main .right img{
     .training .call{
         padding: 10px 50px;
         font-size: 1.15rem;
-        margin-bottom: 9rem;
+        margin-bottom: 0rem;
     }
 
 
     /* GROW MOBILE */
+    .grow{
+        padding-top: 7rem;
+    }
     .grow h1{
-        margin-top: 4rem;
+        margin-top: 0;
         font-size: 2rem;
     }
     .grow .body{

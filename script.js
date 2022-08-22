@@ -79,9 +79,19 @@ menu.addEventListener('click', function(){
     }
     else{
         links.style.display = "none";
-        links.style.transform = 'scaleY(1)'
-
         menu.style.border = 'none';
         open = false
     }
 })
+
+const navs = document.querySelectorAll(".nav");
+const x = window.matchMedia("(max-width: 1000px)");
+
+if(x.matches){
+    for(var i = 0; i < navs.length; i++){
+        navs[i].addEventListener('click', function(){
+            links.style.display = "none";
+            menu.style.border = 'none';
+        })
+    }
+}
